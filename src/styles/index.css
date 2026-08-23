@@ -1,0 +1,262 @@
+:root {
+  --blue: #196EA7;
+  --blue-deep: #0F5382;
+  --blue-soft: #EAF3F9;
+  --dark: #111B21;
+  --ink: #1B242B;
+  --muted: #62727F;
+  --faint: #8B99A3;
+  --line: #E3E8EC;
+  --offwhite: #F6F8FA;
+  --white: #FFFFFF;
+  --red: #D64545;
+  --green-bg: #E8F5EC;
+  --green-border: #C5E5CE;
+  --green-text: #1D5E30;
+  --green-text-2: #2C6E3F;
+  --green-icon: #217A3B;
+  --amber-bg: #FBF2E3;
+  --amber-text: #9A6A0C;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --max-width: 1080px;
+  --nav-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p, blockquote, ul, ol, figure {
+  margin: 0;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- layout helpers ---------- */
+
+.section {
+  padding: 72px 20px;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-narrow {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-md);
+  padding: 12px 22px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1.5px solid var(--blue);
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.btn-solid {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-solid:hover {
+  background: var(--blue-deep);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--blue);
+}
+
+.btn-outline:hover {
+  background: var(--blue-soft);
+}
+
+.link-arrow {
+  background: none;
+  border: none;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/* ---------- pills ---------- */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.pill-live {
+  background: var(--green-bg);
+  color: var(--green-icon);
+}
+
+.pill-roadmap {
+  background: var(--amber-bg);
+  color: var(--amber-text);
+}
+
+.category-pill {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  font-family: inherit;
+}
+
+.category-pill.active {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: white;
+}
+
+.tag-pill {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* ---------- cards ---------- */
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  background: white;
+}
+
+.card-flat {
+  background: var(--offwhite);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+}
+
+/* ---------- responsive grids ---------- */
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 860px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 28px;
+  }
+  .nav-desktop,
+  .nav-desktop-cta {
+    display: none !important;
+  }
+  .nav-mobile-toggle {
+    display: flex !important;
+  }
+  .rail-line {
+    display: none;
+  }
+}
+
+.nav-mobile-toggle {
+  display: none;
+}
