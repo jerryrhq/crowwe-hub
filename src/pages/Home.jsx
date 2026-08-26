@@ -196,6 +196,13 @@ export default function Home() {
             Get in touch
           </Button>
         </div>
+        <a
+  href="https://crowwe.net/privacy-policy/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "inline-block", marginTop: 20, fontSize: 13, color: "#AEC0CA", textDecoration: "underline" }}>
+  Privacy Policy
+</a>
       </Section>
     </>
   );
