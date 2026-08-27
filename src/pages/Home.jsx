@@ -53,6 +53,19 @@ export default function Home() {
               Discover INNA
             </Button>
           </div>
+
+
+ <a href="https://play.google.com/store/apps/details?id=com.crowwe.app"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "inline-block", marginTop: 24 }}
+>
+  <img
+    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+    alt="Get it on Google Play"
+    style={{ height: 96, width: "auto" }}
+  />
+</a>
         </div>
       </section>
 
