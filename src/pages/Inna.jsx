@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, Globe2, MessageSquareText } from "lucide-react";
 import Seo from "../lib/Seo";
 import { Eyebrow, Section, Button } from "../components/ui";
 import { InnaWorkflowRail } from "../components/PlatformPieces";
@@ -19,7 +19,26 @@ const USE_CASES = [
   },
   {
     title: "Payments",
-    desc: "Documents can integrate Crowwe Wallet QR payment structures where supported.",
+    desc: "Mention that a Crowwe Wallet QR code is attached and INNA can generate a scannable code on the document, so customers can pay without typed-out account details.",
+  },
+];
+
+const CAPABILITIES = [
+  {
+    title: "Professional documents, auto-filled",
+    desc: "Describe what you're selling and INNA builds a clean invoice, quote, receipt, or proposal — pulling your saved business profile in automatically so you're not retyping your name, contact details, or address every time.",
+  },
+  {
+    title: "Plain-language bookkeeping",
+    desc: "INNA talks about \"money in\" and \"money out\" instead of accounting jargon, and works strictly from the numbers you give it — it doesn't invent sales, costs, or figures.",
+  },
+  {
+    title: "Turning messy notes into order",
+    desc: "Scattered prices, stock lists, and customer details become clean, structured tables and lists you can actually act on.",
+  },
+  {
+    title: "Everyday tasks, not just business",
+    desc: "Summarizing a long report, drafting a caption or bio, brainstorming marketing ideas, or planning a trip — INNA handles everyday admin too, not only business paperwork.",
   },
 ];
 
@@ -61,6 +80,41 @@ export default function Inna() {
               <p style={{ fontSize: 13.5, color: "var(--muted)", lineHeight: 1.6 }}>{u.desc}</p>
             </div>
           ))}
+        </div>
+
+        <h2 style={{ fontSize: 22, fontWeight: 800, color: "var(--dark)", marginBottom: 20 }}>What INNA handles day to day</h2>
+        <div className="grid-auto" style={{ marginBottom: 44 }}>
+          {CAPABILITIES.map((c) => (
+            <div key={c.title} className="card">
+              <h3 style={{ fontSize: 15.5, fontWeight: 700, color: "var(--dark)", marginBottom: 8 }}>{c.title}</h3>
+              <p style={{ fontSize: 13.5, color: "var(--muted)", lineHeight: 1.6 }}>{c.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="card-flat" style={{ marginBottom: 24 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+            <Globe2 size={20} color="var(--blue)" />
+            <h2 style={{ fontSize: 17, fontWeight: 800, color: "var(--dark)" }}>Built for the Nigerian and African context</h2>
+          </div>
+          <p style={{ fontSize: 14.5, color: "var(--muted)", lineHeight: 1.65 }}>
+            INNA defaults to the Nigerian Naira and is familiar with local institutions, telecom networks, transport
+            systems, and local government areas — so its guidance is grounded in the environment users actually
+            operate in, rather than generic advice imported from elsewhere.
+          </p>
+        </div>
+
+        <div className="card-flat" style={{ marginBottom: 40 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+            <MessageSquareText size={20} color="var(--blue)" />
+            <h2 style={{ fontSize: 17, fontWeight: 800, color: "var(--dark)" }}>How INNA shows up</h2>
+          </div>
+          <p style={{ fontSize: 14.5, color: "var(--muted)", lineHeight: 1.65 }}>
+            INNA is built to sound calm, direct, and conversational — no filler, no forced enthusiasm. It's also built
+            to know its limits: for medical, legal, or financial specifics, especially anything affecting legal rights
+            or significant money, it points users to a qualified professional rather than guessing. If something is
+            unverifiable or unknown, INNA says so rather than presenting a guess as fact.
+          </p>
         </div>
 
         <div className="card-flat" style={{ marginBottom: 40 }}>
