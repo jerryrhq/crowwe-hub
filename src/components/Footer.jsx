@@ -30,6 +30,12 @@ export default function Footer() {
                 {n.label}
               </Link>
             ))}
+            <Link
+  to="/terms"
+  style={{ fontSize: 12.5, color: "#7C8D97", textDecoration: "underline" }}
+>
+  Terms of Service
+</Link>
           </nav>
         </div>
         <div style={{ borderTop: "1px solid #26343C", paddingTop: 20, fontSize: 12.5, color: "#7C8D97" }}>
