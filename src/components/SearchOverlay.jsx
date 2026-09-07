@@ -69,7 +69,7 @@ export default function SearchOverlay({ open, onClose }) {
         style={{
           width: "100%",
           maxWidth: 560,
-          background: "white",
+          background: "var(--surface)",
           borderRadius: 14,
           overflow: "hidden",
           boxShadow: "0 20px 60px rgba(0,0,0,0.25)",

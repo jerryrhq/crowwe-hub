@@ -1,22 +1,24 @@
 :root {
-  --blue: #196EA7;
-  --blue-deep: #0F5382;
-  --blue-soft: #EAF3F9;
-  --dark: #111B21;
-  --ink: #1B242B;
-  --muted: #62727F;
-  --faint: #8B99A3;
-  --line: #E3E8EC;
-  --offwhite: #F6F8FA;
-  --white: #FFFFFF;
-  --red: #D64545;
-  --green-bg: #E8F5EC;
-  --green-border: #C5E5CE;
-  --green-text: #1D5E30;
-  --green-text-2: #2C6E3F;
-  --green-icon: #217A3B;
-  --amber-bg: #FBF2E3;
-  --amber-text: #9A6A0C;
+  --blue: #4BA3DC;
+  --blue-deep: #2F80B5;
+  --blue-soft: #102B40;
+  --dark: #FFFFFF;
+  --dark-bg: #02070D;
+  --ink: #FFFFFF;
+  --muted: #8BBBDD;
+  --faint: #6387A0;
+  --line: #1D3447;
+  --offwhite: #0C1724;
+  --white: #060D16;
+  --surface: #102235;
+  --red: #F87171;
+  --green-bg: #123522;
+  --green-border: #286B43;
+  --green-text: #86EFAC;
+  --green-text-2: #86EFAC;
+  --green-icon: #4ADE80;
+  --amber-bg: #3B1720;
+  --amber-text: #FCA5A5;
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -182,7 +184,7 @@ a:focus-visible,
   font-weight: 700;
   cursor: pointer;
   border: 1px solid var(--line);
-  background: white;
+  background: var(--surface);
   color: var(--ink);
   font-family: inherit;
 }
@@ -208,7 +210,7 @@ a:focus-visible,
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   padding: 22px;
-  background: white;
+  background: var(--surface);
 }
 
 .card-flat {

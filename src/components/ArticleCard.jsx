@@ -67,7 +67,7 @@ export function FeaturedArticleCard({ article }) {
         display: "block",
         width: "100%",
         textAlign: "left",
-        background: "white",
+        background: "var(--surface)",
         border: "1px solid var(--line)",
         borderRadius: 16,
         padding: 28,

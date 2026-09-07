@@ -129,7 +129,7 @@ export default function Home() {
               Discover INNA
             </Button>
           </div>
-          <div style={{ background: "var(--dark)", borderRadius: 16, padding: 28, color: "white" }}>
+          <div style={{ background: "var(--dark-bg)", borderRadius: 16, padding: 28, color: "white" }}>
             {["Context", "Understand", "Assist", "Produce"].map((step, i) => (
               <div key={step} style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 0" }}>
                 <span
@@ -197,13 +197,13 @@ export default function Home() {
       </Section>
 
       {/* Contact strip */}
-      <Section bg="var(--dark)">
+      <Section bg="var(--dark-bg)">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 20 }}>
           <div>
             <h2 style={{ fontSize: 24, fontWeight: 800, color: "white", marginBottom: 6 }}>
               Have a question about Crowwe?
             </h2>
-            <p style={{ fontSize: 15, color: "#AEC0CA" }}>Reach out and the team will get back to you.</p>
+            <p style={{ fontSize: 15, color: "var(--muted)" }}>Reach out and the team will get back to you.</p>
           </div>
           <Button onClick={() => navigate("/contact")} icon={Mail}>
             Get in touch
@@ -213,7 +213,7 @@ export default function Home() {
   href="https://crowwe.net/privacy-policy/"
   target="_blank"
   rel="noopener noreferrer"
-  style={{ display: "inline-block", marginTop: 20, fontSize: 13, color: "#AEC0CA", textDecoration: "underline" }}>
+  style={{ display: "inline-block", marginTop: 20, fontSize: 13, color: "var(--muted)", textDecoration: "underline" }}>
   Privacy Policy
 </a>
       </Section>

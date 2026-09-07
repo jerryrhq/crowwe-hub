@@ -3,7 +3,7 @@ import { NAV } from "../data/nav";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "var(--dark)", color: "#AEC0CA", padding: "48px 20px 28px" }}>
+    <footer style={{ background: "var(--dark-bg)", color: "var(--muted)", padding: "48px 20px 28px" }}>
       <div style={{ maxWidth: 1080, margin: "0 auto" }}>
         <div
           style={{
@@ -25,20 +25,22 @@ export default function Footer() {
               <Link
                 key={n.path}
                 to={n.path}
-                style={{ color: "#AEC0CA", fontSize: 14, textDecoration: "none" }}
+                style={{ color: "var(--muted)", fontSize: 14, textDecoration: "none" }}
               >
                 {n.label}
               </Link>
             ))}
-            <Link
-  to="/terms"
-  style={{ fontSize: 12.5, color: "#7C8D97", textDecoration: "underline" }}
->
-  Terms of Service
-</Link>
+            <a
+              href="https://crowwe.net/terms-of-service/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ fontSize: 12.5, color: "var(--faint)", textDecoration: "underline" }}
+            >
+              Terms of Service
+            </a>
           </nav>
         </div>
-        <div style={{ borderTop: "1px solid #26343C", paddingTop: 20, fontSize: 12.5, color: "#7C8D97" }}>
+        <div style={{ borderTop: "1px solid var(--line)", paddingTop: 20, fontSize: 12.5, color: "var(--faint)" }}>
           © {new Date().getFullYear()} Crowwe. All rights reserved.
         </div>
       </div>

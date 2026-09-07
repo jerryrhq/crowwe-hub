@@ -10,7 +10,7 @@ export function ProductTeaserCard({ product }) {
     <Link
       to="/platform"
       style={{
-        background: "white",
+        background: "var(--surface)",
         border: "1px solid var(--line)",
         borderRadius: 14,
         padding: 22,

@@ -16,7 +16,6 @@ import GuideDetail from "./pages/GuideDetail";
 import Inna from "./pages/Inna";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import TermsOfService from "./pages/TermsOfService";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,7 +45,6 @@ export default function App() {
           <Route path="/guides/:slug" element={<GuideDetail />} />
           <Route path="/inna" element={<Inna />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/terms" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

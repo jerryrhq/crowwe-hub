@@ -30,7 +30,7 @@ export default function BackToTop({ threshold = 500 }) {
         alignItems: "center",
         justifyContent: "center",
         cursor: "pointer",
-        boxShadow: "0 6px 18px rgba(25,110,167,0.35)",
+        boxShadow: "0 6px 18px rgba(75,163,220,0.35)",
         zIndex: 40,
       }}
     >
