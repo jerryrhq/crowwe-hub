@@ -9,6 +9,7 @@ import BackToTop from "./components/BackToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Platform from "./pages/Platform";
+import Partners from "./pages/Partners";
 import Articles from "./pages/Articles";
 import ArticleDetail from "./pages/ArticleDetail";
 import Guides from "./pages/Guides";
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/platform" element={<Platform />} />
+          <Route path="/partners" element={<Partners />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:slug" element={<ArticleDetail />} />
           <Route path="/guides" element={<Guides />} />
