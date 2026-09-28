@@ -107,16 +107,69 @@
   flex-wrap: wrap;
 }
 
-.home-store-badge {
+.home-store-badges {
   display: inline-flex;
   align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.home-store-badge {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
   flex: 0 0 auto;
+  border: 1px solid rgba(11, 20, 26, 0.12);
+  border-radius: 10px;
+  background: #0b141a;
+  padding: 5px 12px;
+  color: #fff;
   text-decoration: none;
+}
+
+.home-store-badge-apple {
+  gap: 9px;
+}
+
+.home-apple-mark {
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.home-store-badge-apple > span:last-child {
+  display: grid;
+  gap: 1px;
+}
+
+.home-store-badge-apple small {
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+.home-store-badge-apple b {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.home-store-badge-google {
+  min-height: auto;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.home-store-badge-google:hover {
+  background: transparent;
+}
+
+.home-store-badge-apple:hover {
+  background: #26333a;
 }
 
 .home-store-badge img {
   display: block;
-  width: 188px;
+  width: 174px;
   height: auto;
 }
 
@@ -220,15 +273,16 @@
 .home-brand-mark,
 .home-console-mark {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 94px;
+  height: 42px;
   flex: 0 0 auto;
   place-items: center;
   border-radius: 12px;
   background: linear-gradient(135deg, var(--home-blue), var(--home-light-blue));
   box-shadow: 0 7px 16px rgba(0, 109, 156, 0.2);
   color: #fff;
-  font-size: 19px;
+  font-size: 17px;
+  letter-spacing: -0.06em;
   font-weight: 800;
 }
 
@@ -1298,8 +1352,12 @@
   line-height: 1.6;
 }
 
+.home-download-panel .home-store-badge-apple {
+  min-height: 52px;
+}
+
 .home-download-panel .home-store-badge img {
-  width: 190px;
+  width: 184px;
 }
 
 @media (max-width: 960px) {
@@ -1418,6 +1476,14 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 7px;
+  }
+
+  .home-store-badges {
+    gap: 7px;
+  }
+
+  .home-store-badge img {
+    width: 160px;
   }
 
   .home-hero-highlights {
@@ -1571,6 +1637,11 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 26px 22px;
+  }
+
+  .home-download-panel .home-store-badges {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 

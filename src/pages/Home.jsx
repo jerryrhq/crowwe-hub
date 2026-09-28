@@ -17,6 +17,7 @@ import "./Home.css";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.crowwe.app";
 const PLAY_STORE_BADGE =
   "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png";
+const APP_STORE_URL = "https://apps.apple.com/us/app/crowwe/id6807836820";
 
 const PRODUCT_ICONS = [MessageCircle, Wallet, BriefcaseBusiness];
 const JOURNEY_STEPS = [
@@ -28,15 +29,27 @@ const JOURNEY_STEPS = [
 
 function StoreBadge() {
   return (
-    <a
-      className="home-store-badge"
-      href={PLAY_STORE_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Get Crowwe on Google Play"
-    >
-      <img src={PLAY_STORE_BADGE} alt="Get it on Google Play" />
-    </a>
+    <div className="home-store-badges" aria-label="Download Crowwe">
+      <a
+        className="home-store-badge home-store-badge-apple"
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Download Crowwe on the App Store"
+      >
+        <span className="home-apple-mark" aria-hidden="true"></span>
+        <span><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <a
+        className="home-store-badge home-store-badge-google"
+        href={PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Get Crowwe on Google Play"
+      >
+        <img src={PLAY_STORE_BADGE} alt="Get it on Google Play" />
+      </a>
+    </div>
   );
 }
 
@@ -81,8 +94,8 @@ export default function Home() {
           <div className="home-showcase-wrap">
             <div className="home-showcase" role="img" aria-label="Illustration of Crowwe communication, payment and business features">
               <div className="home-showcase-header">
-                <span className="home-brand-mark">C</span>
-                <span><b>Crowwe</b><small>Your digital ecosystem</small></span>
+                <span className="home-brand-mark">crowwe</span>
+                <span><b>crowwe</b><small>Your digital ecosystem</small></span>
                 <span className="home-live-pill"><i /> Connected</span>
               </div>
               <div className="home-showcase-main">

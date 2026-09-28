@@ -351,7 +351,8 @@ a:focus-visible,
   background: var(--blue);
   box-shadow: 0 0 0 12px rgba(75, 163, 220, 0.1), 0 14px 40px rgba(0, 0, 0, 0.3);
   color: white;
-  font-size: 34px;
+  font-size: 16px;
+  letter-spacing: -0.06em;
   font-weight: 800;
   animation: partners-pulse 4s ease-in-out infinite;
 }

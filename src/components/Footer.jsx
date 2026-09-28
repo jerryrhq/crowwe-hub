@@ -15,7 +15,7 @@ export default function Footer() {
           }}
         >
           <div>
-            <span style={{ fontWeight: 800, fontSize: 20, color: "white" }}>Crowwe</span>
+            <span style={{ fontWeight: 800, fontSize: 20, color: "white" }}>crowwe</span>
             <p style={{ fontSize: 13.5, marginTop: 8, maxWidth: 260, lineHeight: 1.6 }}>
               An all-in-one digital ecosystem for African commerce.
             </p>

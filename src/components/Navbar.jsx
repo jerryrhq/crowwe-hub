@@ -66,8 +66,8 @@ export default function Navbar({ onSearch }) {
           >
             <span
               style={{
-                width: 30,
-                height: 30,
+                width: 102,
+                height: 40,
                 borderRadius: 8,
                 background: "var(--blue)",
                 display: "flex",
@@ -75,13 +75,11 @@ export default function Navbar({ onSearch }) {
                 justifyContent: "center",
                 color: "white",
                 fontWeight: 800,
-                fontSize: 15,
+                fontSize: 20,
+                letterSpacing: "-0.06em",
               }}
             >
-              C
-            </span>
-            <span style={{ fontWeight: 800, fontSize: 18, color: "var(--dark)", letterSpacing: "-0.01em" }}>
-              Crowwe
+              crowwe
             </span>
           </Link>
 
@@ -157,7 +155,22 @@ export default function Navbar({ onSearch }) {
               borderBottom: "1px solid var(--line)",
             }}
           >
-            <span style={{ fontWeight: 800, fontSize: 18, color: "var(--dark)" }}>Crowwe</span>
+            <span
+              style={{
+                display: "grid",
+                width: 102,
+                height: 40,
+                placeItems: "center",
+                borderRadius: 8,
+                background: "var(--blue)",
+                color: "white",
+                fontWeight: 800,
+                fontSize: 20,
+                letterSpacing: "-0.06em",
+              }}
+            >
+              crowwe
+            </span>
             <button
               ref={firstLinkRef}
               onClick={() => setMenuOpen(false)}

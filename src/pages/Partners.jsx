@@ -61,7 +61,7 @@ export default function Partners() {
           <div className="partners-orbit partners-reveal" aria-hidden="true">
             <div className="partners-orbit-ring partners-orbit-ring-one" />
             <div className="partners-orbit-ring partners-orbit-ring-two" />
-            <div className="partners-orbit-core">C</div>
+            <div className="partners-orbit-core">crowwe</div>
             <span className="partners-orbit-dot partners-orbit-dot-one" />
             <span className="partners-orbit-dot partners-orbit-dot-two" />
             <span className="partners-orbit-dot partners-orbit-dot-three" />
